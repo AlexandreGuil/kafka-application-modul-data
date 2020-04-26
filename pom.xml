@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.inti.formation.javaEE.data</groupId>
+    <artifactId>kafka-application-modul-data</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>microservice-producer</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <springboot.version>2.2.6.RELEASE</springboot.version>
+        <springkafka.version>2.3.6.RELEASE</springkafka.version>
+        <kafkaclient.version>2.3.1</kafkaclient.version>
+        <lombok.version>1.18.12</lombok.version>
+        <slf4j.version>1.7.30</slf4j.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- spring boot dependencies-->
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+
+            <!-- spring framework for kafka modules dependencies -->
+
+            <dependency>
+                <groupId>org.springframework.kafka</groupId>
+                <artifactId>spring-kafka</artifactId>
+                <version>${springkafka.version}</version>
+            </dependency>
+
+            <!-- kafka for programming oriented data producer dependencies -->
+
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-clients</artifactId>
+                <version>${kafkaclient.version}</version>
+            </dependency>
+
+            <!-- kafka for topics configuration dependencies -->
+
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-streams</artifactId>
+                <version>${kafkaclient.version}</version>
+            </dependency>
+
+            <!-- annotation for data patterne manipulation dependencies -->
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+            <!-- slf4j log framwork dependencies -->
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>

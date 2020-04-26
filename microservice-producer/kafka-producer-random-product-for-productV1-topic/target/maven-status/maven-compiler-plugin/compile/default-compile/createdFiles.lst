@@ -1,0 +1,5 @@
+com\inti\formation\product\producer\ProducerBuilder.class
+com\inti\formation\product\util\ReadFileInfoProduct.class
+com\inti\formation\product\serirallizer\JsonPojoSeriallizer.class
+com\inti\formation\product\AppProducer.class
+com\inti\formation\product\data\Product.class

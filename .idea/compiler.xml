@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="data-producer-random-price-for-kafka-productV2-topic" />
+        <module name="kafka-producer-random-price-for-product-V2-topic" />
+        <module name="data-producer-random-product-for-kafka-productV1-topics" />
+        <module name="kafka-producer-random-product-for-productV1-topic" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="data-producer-random-price-for-kafka-productV2-topic" target="1.5" />
+      <module name="data-producer-random-product-for-kafka-productV1-topics" target="1.5" />
+      <module name="microservice-data" target="1.5" />
+      <module name="miscroservice-producer" target="1.5" />
+      <module name="miscroservice-producer-random-product-to-kafka-topic" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,22 @@
+camel:
+  springboot:
+    name: producerPrice
+
+server:
+  port: 0
+
+
+kafka:
+  bootstrap-server: 192.168.99.101:29092
+  acks: all
+  retries: 2147483647
+  batch-size: 131072
+  buffer-memory: 80000000
+  client-id: producerPrice
+  idempotence: true
+  compression-type: snappy
+  topic-name: product-v2
+  user: producer-user
+  password: producer-pwd
+
+schedule-time: 300
